@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional base styles */
+@layer base {
+  body {
+    @apply bg-gov-bg text-gov-ink font-sans;
+  }
+}
+
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1; /* pushes footer to bottom */
+}
