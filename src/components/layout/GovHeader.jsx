@@ -17,7 +17,7 @@ export default function GovHeader() {
       <div className="bg-gov-navy text-white px-4 py-6 flex flex-col items-center">
   <Link to="/" className="flex flex-col items-center">
     <img
-      src="/src/assets/logonobg.png"
+      src="/logonobg.png"
       alt="State Emblem"
       className="h-22 w-22 mb-2 cursor-pointer"
     />
@@ -91,6 +91,14 @@ export default function GovHeader() {
             >
               <Lightbulb size={16} /> Recommendations
             </NavLink>
+            <NavLink
+  to="/reports"
+  className={({ isActive }) =>
+    (isActive ? activeLink : "") + " " + linkBase
+  }
+>
+  <FileText size={16} /> Reports
+</NavLink>
           </div>
         )}
 

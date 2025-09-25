@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import PageShell from "./components/layout/PageShell.jsx";
 import ProtectedRoute from "./guards/ProtectedRoute.jsx";
+import { useEffect, useState } from "react";
 
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
@@ -10,6 +11,7 @@ import DataEntry from "./pages/DataEntry.jsx";
 import CarbonEmissionReport from "./pages/CarbonEmissionReport.jsx";
 import CarbonSinkAnalysis from "./pages/CarbonSinkAnalysis.jsx";
 import Recommendations from "./pages/Recommendations.jsx";
+import Report from "./pages/Reports.jsx";
 
 
 export default function RoutesDef() {
@@ -52,6 +54,14 @@ export default function RoutesDef() {
           element={
             <ProtectedRoute>
               <Recommendations />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/reports"
+          element={
+          <ProtectedRoute>
+              <Report />
             </ProtectedRoute>
           }
         />

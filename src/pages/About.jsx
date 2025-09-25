@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 
 // Example images (replace with your own assets in /src/assets)
 const images = [
-  { src: "/src/assets/coal-mine.jpg", caption: "Coal Mine Emission Tracking", label: "Coal Mine" },
-  { src: "/src/assets/forest.jpg", caption: "Carbon Sink Assessment", label: "Forest" },
-  { src: "/src/assets/industry.jpg", caption: "Industrial Impact Monitoring", label: "Industry" },
+  { src: "/coal-mine.jpg", caption: "Coal Mine Emission Tracking", label: "Coal Mine" },
+  { src: "/forest.jpg", caption: "Carbon Sink Assessment", label: "Forest" },
+  { src: "/industry.jpg", caption: "Industrial Impact Monitoring", label: "Industry" },
 ];
 
 export default function About() {
